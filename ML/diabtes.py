@@ -6,6 +6,8 @@ from sklearn.metrics import mean_squared_error
 diabetes = datasets.load_diabetes()
 '''dict_keys(['data', 'target', 'frame', 'DESCR', 'feature_names', 'data_filename', 'target_filename'])'''
 
+
+#pylint: disable=no-member
 diabetes_X = diabetes.data
 diabetes_X_train = diabetes_X[:-30]
 diabetes_X_test = diabetes_X[-30:]

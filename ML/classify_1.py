@@ -4,13 +4,15 @@ from sklearn.neighbors import KNeighborsClassifier
 #Loading Datasets
 iris = datasets.load_iris()
 
+
+#pylint: disable=no-member
 features = iris.data
 labels = iris.target
 
 ''':Attribute Information:
         - sepal length in cm
         - sepal width in cm
-        - petal length in cm
+        - petal length in cm 
         - petal width in cm'''
 
 # Training classifier
